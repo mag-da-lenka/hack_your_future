@@ -1,0 +1,313 @@
+/* Component Needs */
+
+.pc-tab>input, 
+.pc-tab section>div { display: none;}
+
+#tab1:checked~section .tab1, 
+#tab2:checked~section .tab2, 
+#tab3:checked~section .tab3, 
+#tab4:checked~section .tab4 { display: block;}
+
+*, 
+*:after, 
+*:before {
+    -webkit-box-sizing: border-box;    
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(48, 48, 48);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: rgb(240, 240, 240);
+    padding: 0% 0% 0% 0%; margin: 0% 0% 2% 0%;
+}
+
+.pc-tab { width: 100%;  max-width: 700px;  margin: 0 auto;}
+
+.pc-tab ul {list-style: none; margin: 0; padding: 0; display: flex;}
+
+
+/* JUMPING BETWEEN TABS as a user --------start */
+.pc-tab label.navigation, 
+.submit-button {  /* ANY OF THE BACK // NEXT "BUTTONS" between each tab */
+    /* display: block;  */
+    display: flex; justify-content: center;
+    margin: 0% 0% 0% 0%; padding: 2% 2% 2% 2%; width: 40%; 
+    font: 20px bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white; background-color: orange;
+    border: 1px solid rgb(223, 147, 7);  border-radius: 5px; 
+    cursor: pointer; 
+}
+.tab1-btn-forward        {display: flex; flex-direction: row-reverse;} 
+.tab2-btns-back-forward  {display: flex; flex-direction: row; justify-content: space-between;}
+.tab3-btns-back-forward  {display: flex; flex-direction: row; justify-content: space-between;}
+.tab4-btn-back-or-submit {display: flex; flex-direction: row; justify-content: space-between;}
+/* JUMPING BETWEEN TABS as a user --------end */
+
+
+
+#tab1:checked~nav .tab1 label, 
+#tab2:checked~nav .tab2 label, 
+#tab3:checked~nav .tab3 label, 
+#tab4:checked~nav .tab4 label { background: #fff; position: relative;}
+
+#tab1:checked~nav .tab1 label:after, 
+#tab2:checked~nav .tab2 label:after, 
+#tab3:checked~nav .tab3 label:after, 
+#tab4:checked~nav .tab4 label:after {
+    content: ''; display: block; position: absolute; height: 2px; width: 100%; background: #fff; left: 0; bottom: -1px;
+}
+
+section {/* my addition */
+    border: solid black 1px; border-radius: 5px;
+    padding: 2% 10% 5% 10%; background: rgb(255, 255, 255);
+}
+
+section div {/* original // every single div in a section */
+    padding: 0% 0% 0% 0%; margin: 0% 0% 0% 0%; width: 100%;
+    background: rgb(242, 249, 250); background: rgb(255, 255, 255);
+}
+
+h1, h2, h3 {max-width: 500px; text-align: left;}
+h1 {text-align: center; font-size: 50px; margin: auto; margin-top: 50px;}
+
+
+
+
+
+
+
+/* MY ADDITIONS ---------------------------------------------- */
+
+/* ANIMATED PROGRESS BARS --------start here*/
+.meter {    
+    height: 25px; width: 100%; 
+    margin: 0% 0% 1% 0%; padding: 1px;
+    position: relative; 
+    overflow: hidden;
+    background: rgba(173, 216, 230, 0.24);
+    border: 1px solid lightblue; border-radius: 15px;
+}
+
+.meter span {display: block;  height: 100%;}
+
+.progress1, .progress2, .progress3, .progress4 {
+    background-image: linear-gradient(to bottom, #ffef0f, #ff6a00);  border-radius: 15px;
+}
+
+.progress1 {animation: progressBar1 2s ease-in-out; animation-fill-mode: both;}
+@keyframes progressBar1 {0% {width: 0%;}  100% {width: 25%;}}
+.progress2 {animation: progressBar2 2s ease-in-out; animation-fill-mode: both;}
+@keyframes progressBar2 {0% {width: 25%;} 100% {width: 50%;}}
+.progress3 {animation: progressBar3 2s ease-in-out; animation-fill-mode: both;}
+@keyframes progressBar3 {0% {width: 50%;} 100% {width: 70%;}}
+.progress4 {animation: progressBar4 2s ease-in-out; animation-fill-mode: both;}
+@keyframes progressBar4 {0% {width: 70%;} 100% {width: 90%;}}
+/* ANIMATED PROGRESS BARS end here*/
+
+
+
+
+/* NAVIGATION (top bar) ------- STARTS HERE */
+
+.navigation-bar { /* this is the TOP NAVIGATION BAR,  // NOT the buttons at the bottom */
+    width: 100%; height: 90px; margin: 0% 0% 0% 0%; 
+    display: flex;  flex-direction: row; flex-wrap: nowrap; justify-content: flex-end; align-items: flex-start;
+    background-image: linear-gradient(to bottom, rgb(194, 194, 194),rgb(240, 240, 240)); 
+    /* border: dotted 2px black; */
+}
+
+nav {
+    width: 100%;  max-width: 700px;  margin: 0 auto; padding: 0% 0% 0% 0%; 
+    display: flex; flex-direction: row; justify-content: flex-end;  
+    /* border: dotted 2px green; */  
+}
+
+a {color: rgb(61, 61, 61)}
+a:visited { color: rgb(116, 116, 116);}
+a:hover, a:active, a:focus {
+    /* background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(226, 226, 226)); */
+    font-weight: bold; font-size: 1.0em; color: rgb(255, 255, 255);
+}  
+nav>a { 
+    width: 25%; margin: 2% 1% 0% 1%; padding: 2px;
+    text-align: center; text-decoration: none; 
+}
+/* NAVIGATION (top bar) ends HERE */
+
+
+
+/* bb8 ------ starts here */
+.logo-pic-frame {
+    height: 150px; width: 150px; margin: 0 auto; margin-bottom: 2%; padding: 0% 0% 0% 0%; 
+    /* border: dashed 2px yellow; border-radius: 1.0em; */
+    border: none; 
+}
+.logo-pic { width: 100%; height: 100%;}
+figcaption {text-align: center; color:  rgb(160, 160, 160); margin: 0% 0% 10% 0%; }
+/* bb8 ends here */
+
+
+
+
+
+
+
+
+
+.inputs {  /*this each box with inputs in each tab*/
+    margin: 1% 0% 10% 0%;  padding: 5% 2% 5% 2%;
+    border: 2px solid orange; border-radius: 5px;
+}
+
+figure { /* my addition */
+    width: 200px; margin: 0% 0% 0% 0%;  padding: 0% 0% 0% 0%;
+    text-align: left; border: 1px dotted black;
+}
+
+input, 
+.drop-menu-style, 
+.text-area-style {
+    /* this is any of the single input/drop_menu/text area boxes */
+    margin: 0.5% 0% 2% 0%; padding: 2px; width: 120px;
+    display: block;
+    webkit-appearance: none;  /*It was off. I switched it on b/c I want to bring the input style for radio buttons to default browser setting*/
+    border: 1px solid lightskyblue; border-radius: 5px;
+    
+}
+
+.text-area-style {width: 80%; height: 100px;}
+
+.label-and-text-input {display: flex; flex-direction: row; justify-content: flex-start;}
+
+.shipping-address { /*=hidden field in tab1; becomes visible if unchecked*/ 
+    display: block; 
+    margin-bottom: 5%; padding-bottom: 5%;
+    border: 1px dashed orange; border-radius: 5px;
+}
+
+label:not(.radio-label) {   /* my addition */    
+    /* background-color: rgba(135, 206, 250, 0.308); border: blue solid 1px;  */
+    width: 100px; margin: 0% 1% 0% 0%;
+    text-align: right;font-size: small;  
+}
+
+.checkmark { /* the one for shopping address*/
+    height: 20px;  width: 20px; margin-right: 20px; webkit-appearance: none;
+}
+
+
+img { width: 100%;  width: 100px;}  
+
+
+.shipping-address-decision input:checked~.shipping-address {
+    /* my addition: this is way to hide alt-address container */
+    display: none;
+}
+
+
+
+
+
+/* RADIO BUTTONS ------ start here */
+.radio-btns-fieldset {                                    
+    display: block;  
+    margin: 5% 0% 3% 0%; padding: 0% 0% 0% 0%; 
+    border: orange 1px; border-radius: 5px; border-style: solid;
+}
+.radio-btns-fieldset legend {                             
+    margin: 0% 0% 1% 5%;  padding: 1% 2% 1% 2%; 
+    /* border: orange 1px solid; border-radius: 15px;  */
+}  
+.radio-btns-and-labels-all-in-fieldset {                  /*border: green 2px solid; */
+    margin: 0% 0% 0% 0%;  padding:  2% 0% 2% 0%;
+    display: flex; flex-direction: row;
+}
+.radio-btn-and-label {                                    /*border: red 2px dotted;  border-radius: 15px;*/
+    margin: 0% 0% 0% 0%;  padding:  0% 0% 0% 0%;
+    display: flex;  align-items: center; 
+}
+.radio-label {                                            /*border: red 2px solid; border-radius: 15px; */
+     margin: 0% 0% 0% -7%;  padding: 0% 0% 0% 0%; 
+}
+.radio-btns-fieldset input[type='radio'] {                /* this is the radio button itself */
+    float: left; transform: scale(1.3);
+    margin: 4px -20% 0% -45px;  padding: 0% 0% 0% 0%; 
+      /* -moz-transform: scale(4.5);
+    -ms-transform: scale(4.5);
+    -webkit-transform: scale(3.5);
+    -o-transform: scale(3.5);  */
+}  
+/* RADIO BUTTONS ------ end here */ 
+
+
+
+/* CHECKMARK field ----starts here */
+.checkbox-container-step3 {
+    margin: 0% 0% 10% 0%;  padding: 0% 0% 0% 0%;
+    display: flex; flex-direction: row;  flex-wrap: wrap;
+} 
+.each-checkmark-and-label {
+margin: 0% 0% 2% 0%;  padding: 0% 0% 0% 0%; width: 30%;
+display: flex; flex-direction: row;
+}
+.checkbox-container-step3 input[type='checkbox'] {
+    margin: 1% 0% 1% -7%;  padding: 0% 0% 0% 0%; 
+    webkit-appearance: none; transform: scale(1.3); 
+} 
+.checkbox-container-step3 label{
+    margin: 0% 0% 1% 0%;  padding: 0% 0% 0% 0%;
+    webkit-appearance: none; transform: scale(1.3); 
+    text-align: left;
+}
+/* CHECKMARK field ----ends here */
+
+
+
+
+/* IMAGES BOX tab3 ----starts here */
+.images-container-tab3 {
+    display: flex; flex-wrap: wrap; 
+}
+.images-container-tab3 >figure {
+    width: 31.3%; margin: 0% 1% 2% 1%;  padding: 0% 0% 2% 0%;
+    display: flex; flex-wrap: wrap; 
+    border: rgb(194, 194, 194) 1px solid; border-radius: 5px;
+}
+.images-container-tab3  img {
+    width: 100%; margin-bottom: 5%;
+} 
+.images-container-tab3  input[type='checkbox'] {
+    width: 100%; transform: scale(1.5);
+}
+/* IMAGES BOX tab3 ----ends here */
+
+
+
+
+
+
+/* original media query */
+
+ @media only screen and (max-width: 600px) {
+
+    .pc-tab ul {flex-direction: column;}
+    .pc-tab li {width: 100%;}
+    label:after {height: 0px !important;} 
+    
+    nav {flex-direction: column;  align-items: flex-end;}
+    
+    section { padding: 2% 2% 5% 2%; margin: 2% 0.5% 5% 0.5%}
+    
+    .logo-pic-frame {height: 100px; width: 100px;}
+
+    .radio-btns-and-labels-all-in-fieldset {flex-direction: column;}
+    .radio-label {margin: 0% 0% 0% 11%;  padding: 0% 0% 0% 0%; }
+    
+    .each-checkmark-and-label {width: 100%;} 
+
+    .images-container-tab3 >figure {width: 48%;}
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Homework week 3 Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form id="form1" method="post" action="success.html">
+        <div class="pc-tab">
+            <input checked="checked" id="tab1" type="radio" name="pct" />
+            <input id="tab2" type="radio" name="pct" />
+            <input id="tab3" type="radio" name="pct" />
+            <input id="tab4" type="radio" name="pct" />
+            <section>
+                <div class="tab1">
+                    <h2>First page</h2>
+
+                    <div class="inputs">
+
+                        <!-- add additional html form inputs here...
+                        remember that the required ones each must have the class="input-required" -->
+
+                        <!-- Example (can be replaced by your own...) :  -->
+
+                        <label for="firstname">FIRSTNAME*</label>
+                        <input type="text" class="input-required" id="firstname" name="firstname" required>
+
+                        <label for="lastname">LASTNAME*</label>
+                        <input type="text" class="input-required" id="lastname" name="lastname" required>
+
+                        <label for="email">EMAIL*</label>
+                        <input type="email" class="input-required" id="email" name="email" required>
+
+                    </div>
+
+                    <label for="tab2" id="label2" class="navigation">Second Tab</label>
+                </div>
+
+                <div class="tab2">
+                    <h2>Second page</h2>
+
+                    <div class="inputs">
+
+                        <!-- add additional html form inputs here...
+                         remember that the required ones each must have the class="input-required" -->
+
+                    </div>
+
+                    <label for="tab1" class="navigation">First Tab</label>
+                    <label for="tab3" id="label3" class="navigation">Third Tab</label>
+                </div>
+
+                <div class="tab3">
+                    <h2>Third page</h2>
+
+                    <div class="inputs">
+
+                        <!-- add additional html form inputs here...
+                         remember that the required ones each must have the class="input-required" -->
+
+                    </div>
+
+                    <label for="tab2" class="navigation">Second Tab</label>
+                    <label for="tab4" id="label4" class="navigation">Fourth Tab</label>
+                </div>
+
+                <div class="tab4">
+                    <h2>Fourth page</h2>
+
+                    <div class="inputs">
+
+                        <!-- add additional html form inputs here...
+                         remember that the required ones each must have the class="input-required" -->
+
+                    </div>
+
+                    <label for="tab3" class="navigation">Third Tab</label>
+                    <input type="submit" id="submit">
+                </div>
+            </section>
+        </div>
+    </form>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

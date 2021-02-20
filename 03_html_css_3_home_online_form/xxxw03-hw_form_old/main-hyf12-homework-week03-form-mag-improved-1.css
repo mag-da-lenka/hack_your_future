@@ -1,0 +1,221 @@
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;   -moz-box-sizing: border-box;  box-sizing: border-box; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* font family added */ }
+
+body {-webkit-font-smoothing: antialiased;  background: orange; /* colour changed */}
+
+
+
+
+
+.pc-tab {  /*this is the tab with radio buttons on top, it contains all four sections*/
+    margin: 0 auto; width: 100%; max-width: 700px; border: 3px dotted white; border-radius: 10px;}
+
+.pc-tab>input, .pc-tab section>div { /* Component Needs */
+    display: none; /*when switched off, the tabs will disappera and all 4 sections will be displayed in one column*/
+}
+
+
+
+#tab1:checked~section .tab1, #tab2:checked~section .tab2, #tab3:checked~section .tab3, #tab4:checked~section .tab4 {
+    display: block; }
+
+#tab1, #tab2, #tab3, #tab4 { display: inline-block; /*this is way to see the tabs work on radio buttons ---> study group - yaaaaaaay*/}
+
+#tab1:checked ~ nav .tab1 label, #tab2:checked ~ nav .tab2 label, 
+#tab3:checked ~ nav .tab3 label, #tab4:checked ~ nav .tab4 label {
+    background: #fff; 
+    position: relative;
+}
+
+#tab1:checked ~ nav .tab1 label:after, #tab2:checked ~ nav .tab2 label:after, 
+#tab3:checked ~ nav .tab3 label:after, #tab4:checked ~ nav .tab4 label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px; width: 100%; background: #fff;
+    left: 0;
+    bottom: -1px;
+}
+
+
+.tab1, .tab2, .tab3, .tab4 {
+    margin-bottom: 5%;
+    border: black 3px solid; /*this is any of the four tabs = pages*/ border-radius: 10px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------top-NAV-start-------------------------*/
+
+.top-bar {
+    width: 100%; margin: 0% 0% 1% 0%;/*top-right-bottom-left*/
+    display: flex;  flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; 
+    border: dotted 2px black; border-radius: 1.0em;
+} 
+  
+.logo-pic-frame {
+    width: 15%; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 0% 0% 0% 0%;/*top-right-bottom-left*/
+    border: dashed 2px yellow; border-radius: 1.0em;
+}
+  
+.logo-pic {width: 100%; height: 100%;}
+  
+nav {
+    width: 60%; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 0% 0% 0% 0%;/*top-right-bottom-left*/
+    display: flex; flex-direction: row; justify-content: flex-end; 
+    border: dotted 2px yellow; border-radius: 20px;
+} 
+
+a:visited {color: rgb(116, 116, 116);} 
+a:hover, a:active, a:focus {color: white; background-color: yellowgreen;  opacity: 0.9; font-weight: bold; font-size: 1.0em;}
+nav > a {
+    width: 25%; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 0% 0% 0% 0%;/*top-right-bottom-left*/ 
+    text-align: center; text-decoration: none; border: solid 2px white; border-radius: 10px; /*rgb(16, 185, 129)*/
+}
+/*---------top-NAV---end-----------------------*/
+
+
+
+h1 {
+    margin: 0 auto; width: 300px;  
+    color: white; /* style changed */ text-align: center; font-weight: 500; font-size: 55px;  
+    border: 3px solid white;  border-radius: 10px; 
+}
+
+h2, h3 {
+    color: black; font-weight: 600; /* style added */
+}
+
+
+progress[value] { /* Reset the default appearance */
+    -webkit-appearance: none;  appearance: none;
+    width: 500px; height: 20px;    
+}
+progress[value]::-webkit-progress-bar {
+    background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    -border: 2px dotted blueviolet; 
+}
+
+
+
+
+section div { /*This descendant selector selects every div in each section*/
+    width: 100%; padding: 3%;   background: #fff;   
+}
+
+.inputs {   /*this is the box with inputs*/ 
+    margin-bottom: 3%;  border: 2px solid orange; border-radius: 5px;   
+}
+
+input, .drop-menu-style, .text-area-style {    /*these are the input boxes themselves*/
+    margin: 10px 0px 10px 0px; padding: 2px;
+    display: block; /*we'll see*/
+    -display: flex; -flex-direction: column; 
+    -width: 70%; /*added by me but it messed the radio buttons and checkboxes = PURE EVIL*/
+    webkit-appearance: none; /*It was off*/ /*I switched it on b/c I want to bring the input style for radio buttons to default browser setting*/
+    border: 1.0px solid lightskyblue; border-radius: 5px;     
+}
+
+.text-area-style {width: 80%; height: 100px;}
+
+.shipping-address-decision input:checked ~.shipping-address { display: none; /*this is way to hide alt-address container*/}
+.shipping-address {display: block; /*=hidden field in tab1; becomes visible if unchecked*/border: 1px dashed orange; border-radius: 5px;} 
+
+
+#img-container,  
+#checkbox-container-step3 {margin: 0% 0% 2% 0%; padding: 10px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;}
+figure {width: 22%; margin: 0% 0% 1% 0%; padding: 0; text-align: left; border: 2px solid pink; -border-radius: 10px; }
+img {width: 100%;} 
+
+
+
+
+
+
+
+
+.navigation-bar-steps {      
+    display: flex; justify-content: space-between; 
+    margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 0% 0% 0% 0%;/*top-right-bottom-left*/ 
+    -border: 2px dotted orange; border-radius: 5px;
+}
+
+.invisi-button { 
+    opacity: 0;
+    width: 100px; height: 50px; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 1% 0% 0.5% 0%;/*top-right-bottom-left*/
+    color: orange; font-weight: bold; font-size: 1.3em; text-align: center; background-color: rgb(228, 245, 255);  
+    -cursor: pointer;
+    border: 2.0px solid green; border-radius: 5px; -box-shadow: 10px 10px 8px #888888; 
+}
+
+label.navigation { /*= any of the back/next buttons leading to previous/next step, initially was like this: .pc-tab label.navigation*/
+    width: 100px; height: 50px; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 1% 0% 0.5% 0%;/*top-right-bottom-left*/
+    color: orange; font-weight: bold; font-size: 1.3em; text-align: center; background-color: rgb(228, 245, 255);  
+    cursor: pointer;
+    border: 2.0px solid lightskyblue; border-radius: 5px; -box-shadow: 10px 10px 8px #888888; 
+}
+
+.button { /*this is SUBMIT button*/
+    width: 100px; height: 50px; margin: 0% 0% 0% 0%;/*top-right-bottom-left*/ padding: 1% 0% 2.0% 0%;/*top-right-bottom-left*/
+    color: white; font-weight: bold; font-size: 1.3em; text-align: center; background-color: orange;  
+    cursor: pointer;
+    border: 2.0px solid lightskyblue; border-radius: 5px; -box-shadow: 10px 10px 8px #888888;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section div h2 {
+    margin: 0;
+    margin-bottom: 10px;
+} This is unnecessary. Removed!*/ 
+
+/*.pc-tab ul { 
+    list-style: none; margin: 0; padding: 0; display: flex;
+} THIS IS sth EXTRA because there is not a single ul in my code so I'm deactivating it*/
+
+/*a:link {   
+} This is unnecessary. Removed!*/
+
+/**/
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .pc-tab ul {
+       flex-direction: column;
+    }
+    .pc-tab li {
+        width: 100%;
+     }
+
+    label:after {
+        height : 0px !important;
+    }
+  }
+
+

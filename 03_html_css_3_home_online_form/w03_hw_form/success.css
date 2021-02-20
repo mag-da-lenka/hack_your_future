@@ -1,0 +1,199 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(48, 48, 48);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: rgb(255, 255, 255);
+    margin: 0% 0% 2% 0%;
+}
+
+.pc-tab {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    /* my addition */
+    /* border: solid black 1px; */
+    border-radius: 5px;
+    padding: 2% 10% 5% 10%;
+    background: rgb(255, 255, 255);
+}
+
+section div {
+    /* original // every single div in a section */
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    background: rgb(242, 249, 250);
+}
+
+h1, h2, h3 {
+    max-width: 500px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+/* -----  MY ADDITIONS ----------------------------- */
+
+img {
+    /* my addition */
+    width: 100%;
+}
+
+/* ANIMATED PROGRESS BARS */
+
+.meter {
+    height: 25px;
+    width: 100%;
+    margin: 0% 0% 1% 0%;
+    padding: 1px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(173, 216, 230, 0.24);
+    border: 1px solid lightblue;
+    border-radius: 15px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress5 {
+    background-image: linear-gradient(to bottom, #ffef0f49, #ff6a00cb);
+    background-image: linear-gradient(to bottom, #ffef0f, #ff6a00);
+    border-radius: 15px;
+    border-radius: 15px;
+    animation: progressBar5 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes progressBar5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.navigation-bar {
+    /* this is the TOP NAVIGATION BAR,  // NOT the buttons at the bottom */
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 10% 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    /* border: dotted 2px black; border-radius: 5px; */
+    background-color: rgb(255, 255, 255);
+}
+
+/* end of ANIMATED PROGRESS BARS */
+
+.logo-pic-frame {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 0% 0% 0% 0%;
+    /* border: dashed 2px yellow; border-radius: 1.0em; */
+    border: none;
+}
+
+figcaption {
+    text-align: center;
+    color: rgb(160, 160, 160);
+    margin: 0% 0% 10% 0%;
+}
+
+.logo-pic {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    max-width: 700px;
+    padding: 0% 0% 0% 0%;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: dotted 2px green; border-radius: 20px;  */
+}
+
+a:visited {
+    color: rgb(116, 116, 116);
+}
+
+a:hover, a:active, a:focus {
+    color: orange;
+    opacity: 0.9;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav>a, .success-paragraph>a {
+    width: 25%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    /* border: solid 2px orange; */
+    border-radius: 10px;
+    /*rgb(16, 185, 129)*/
+}
+
+.success-paragraph {
+    font-size: small;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .pc-tab {
+        width: 100%;
+    }
+    .success-paragraph {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.0em;
+    }
+    a:visited {
+        color: rgb(116, 116, 116);
+        opacity: 0.9;
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+    a:hover, a:active, a:focus {
+        color: orange;
+    }
+}

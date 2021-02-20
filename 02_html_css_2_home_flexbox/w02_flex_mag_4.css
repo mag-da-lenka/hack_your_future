@@ -1,0 +1,239 @@
+html, body {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(225, 233, 241);
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 0% 0% 2% 0%;
+    color: rgb(89, 109, 128);
+}
+
+p {
+    color: rgb(80, 74, 74);
+    font-size: 1.2em;
+    padding: 2px 0px 2% 0px;
+}
+
+header {
+    margin: -2% 0% 0% 0%;
+    background-color: rgb(127, 153, 177);
+}
+
+header>h1 {
+    color: rgb(255, 255, 255);
+    padding: 2% 0% 0% 20%;
+}
+
+header>p {
+    color: rgb(255, 255, 255);
+    padding: 0% 0% 2% 20%;
+}
+
+nav {
+    background-color: transparent;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 0% 1% 20%;
+}
+
+img {
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#boxes-inside-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1% 15% 1% 20%;
+}
+
+.box-1 {
+    width: 30%;
+}
+
+.box-2 {
+    width: 60%;
+}
+
+.box-3 {
+    width: 30%;
+}
+
+.box-4 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-4-icons {
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-background {
+    width: 20%;
+}
+
+footer {
+    background-color: rgb(127, 153, 177);
+    margin: 1% 0% 0% 0%;
+    padding: 2% 2% 2% 20%;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.5em;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-all {
+    background-color: rgb(127, 153, 177);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: space-evenly;
+}
+
+.footer-1-find-us {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-2-about-this-page {
+    width: 20%;
+}
+
+.footer-3-archives {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.footer-4-navi-links {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+a:link {
+    color: rgb(72, 89, 105);
+    text-decoration: none;
+    margin: 1% 0% 1% 0%;
+    padding: 1% 2% 1% 2%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.507);
+    border: orange 1px solid;
+    border-radius: 5%;
+}
+
+nav>a:link {
+    margin: 0% 5% 0% 0%;
+}
+
+footer a:link {
+    color: white;
+    background-color: transparent;
+    border-style: none none solid solid;
+    border-radius: 0%;
+    width: 50%;
+}
+
+a:visited {
+    color: rgb(77, 111, 143);
+    border: rgb(241, 183, 76) 1px solid;
+}
+
+footer a:visited {
+    color: rgb(224, 237, 241);
+    background-color: transparent;
+}
+
+a:hover, a:active, a:focus {
+    background-color: rgba(255, 255, 255, 0.897);
+    border-style: solid;
+}
+
+footer a:hover, footer a:active, footera:focus {
+    /* background-color: rgb(111, 135, 158); */
+    /* text-decoration: line-through; */
+    /* text-decoration-color: orange;  */
+    border-style: solid;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 803px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    header>h1, header>p, nav, #boxes-inside-main, footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 1% 0% 1% 0%;
+    }
+    nav>a:link {
+        margin: 0.5% 0% 1% 0%;
+        width: 30%;
+    }
+    #boxes-inside-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-1, .box-2, .box-3, .box-4 {
+        width: 100%;
+    }
+    .box-2 {
+        order: -1;
+    }
+    .box-4-icons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .icon-background {
+        width: 30%;
+    }
+    .footer-all {
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    .footer-1-find-us, .map-style, .footer-2-about-this-page, .footer-3-archives, .footer-4-navi-links {
+        width: 100%;
+    }
+}
+
+/* 
+@media only screen and (max-width: 603px) {}
+*/

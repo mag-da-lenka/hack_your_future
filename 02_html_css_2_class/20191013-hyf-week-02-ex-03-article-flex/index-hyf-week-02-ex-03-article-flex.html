@@ -1,0 +1,106 @@
+<!-- 
+<link rel="stylesheet" href="main-hyf-week-02-ex-03-style3-niels">
+
+DONE 1 header , 3 columns, 1 footer
+3 columns always same height
+footer appears sticky at bottom. Don't add css to footer. Instead add overflow-y to #main
+make it wrap underneath without using media queries. hint: flex-wrap: wrap; on #main
+section, aside fluid size
+section width significantly wider than the aside width
+set a max-width of #main to 1200px;
+add a media query to change the order of the items in #main. The #content should always be displayed first or left most when the items start to wrap
+set additional media queries depening on the content displayed. Perhaps use column-count property
+
+This is the html markup :
+
+ <header>Header</header>
+   <main id="main">
+       <aside id="left-aside"><h1>Aside 1</h1>{ add some lorem ipsum here }</aside>
+       <section id="content"><h1>Section</h1>{ add some lorem ipsum here }</section>
+       <aside id="right-aside"><h1>Aside 2</h1>{ add some lorem ipsum here }</aside>
+   </main>
+   <footer>Footer</footer>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--- <link rel="stylesheet" href="style3.css"> --->
+  <link rel="stylesheet" href="main-hyf-week-02-03-niels.css">
+  <title>Document</title> 
+</head> 
+
+
+
+<body>
+  <header>Header</header>
+  <main id="main">
+    <aside id="left-aside">
+      <h1>Aside 1</h1>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quae distinctio laborum eveniet non dolorum
+      quisquam esse incidunt laudantium consectetur debitis magnam tenetur perferendis hic vitae aperiam ducimus
+      consequuntur enim.
+      Odio consequuntur sunt quasi velit ut, quo beatae voluptatem tempora esse sit exercitationem officiis sequi
+      provident laboriosam fugiat, dolores sint? Quis, perferendis ea. Accusantium, ex fugit sed dolorem aliquid
+      ad.
+      Voluptas fuga vel quas. Sint modi nemo unde a cum. Laudantium sunt animi id eos facere ipsam maiores unde
+      harum praesentium beatae, quibusdam voluptates corrupti
+      Aut illo beatae mollitia! Nam enim, perspiciatis repellendus ullam voluptatum laboriosam, possimus, nemo
+      esse porro quae eligendi necessitatibus aspernatur
+
+      Reprehenderit sit repellat distinctio repellendus. Consequuntur labore libero impedit cupiditate corporis
+      nisi sapiente exercitationem! Nemo nobis culpa in ipsa ipsam provident cum nihil? Inventore atque at libero
+      fuga, voluptas exercitationem!
+    </aside>
+    <section id="content">
+      <h1>Section</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores molestias
+      eius aliquid ratione deleniti dolor. Autem iure cupiditate repellendus error ex veritatis molestias
+      assumenda aperiam, impedit maiores architecto incidunt.
+      Cupiditate corporis, quas recusandae, voluptates ratione molestiae nulla cumque vel suscipit magnam nobis
+      illo omnis nam eligendi dolorum sapiente numquam dignissimos tenetur explicabo ex ipsam amet iure mollitia
+      necessitatibus! Ea!
+      Vitae dolorum esse corporis repellat, alias asperiores repellendus voluptates ipsum sunt, nesciunt facere
+      nostrum in officia minima suscipit dolor at quasi blanditiis facilis expedita corrupti nisi, laboriosam
+      atque? Culpa, blanditiis?
+      Voluptatem quam deleniti maiores odit alias quibusdam repudiandae a non nesciunt, vero exercitationem
+      mollitia obcaecati at assumenda dicta, sit tenetur, quis amet quaerat illum blanditiis vitae officia! Iusto,
+      modi? Necessitatibus.
+      Deleniti eius iure eaque velit ad consectetur, minima quisquam praesentium, vel amet sint earum eum quos
+      possimus omnis dolorum delectus similique dolore repellendus sapiente non quas, iusto obcaecati. Voluptatum,
+      iste!
+      Modi, eos dolores eveniet nemo qui minima veritatis dicta iure tempore, libero accusamus quas ut mollitia
+      quod quam itaque inventore reprehenderit praesentium beatae. Quia libero, dignissimos minima quasi esse
+      aliquid?
+      Fugiat voluptatum aspernatur consequuntur tempore corrupti ipsum explicabo, delectus ullam quam minus
+      inventore deleniti nesciunt adipisci voluptas expedita saepe eligendi error facere ea fuga quo id voluptatem
+      necessitatibus ab! Aut.
+      Voluptatibus est modi eius maiores molestiae possimus odio? Esse doloribus iure quibusdam repudiandae porro
+      non, error excepturi quae cupiditate enim, delectus minus velit! Repellat provident, consequatur optio
+      quisquam laudantium sapiente!
+      Libero, ea. Consectetur atque ipsum veniam adipisci facilis fugiat odit nam architecto numquam dolor. Et
+      veritatis porro sint dignissimos omnis, quasi est fuga
+      Sunt, inventore! Culpa atque omnis, libero accusamus, perspiciatis quas ullam sit porro nesciunt explicabo
+      earum doloribus nulla minus harum dolor doloremque aliquid
+    </section>
+    <aside id="right-aside">
+      <h1>Aside 2</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam asperiores molestias eius aliquid
+      ratione deleniti dolor. Autem iure cupiditate repellendus error ex veritatis molestias assumenda aperiam,
+      impedit maiores architecto incidunt.
+      Cupiditate corporis, quas recusandae, voluptates ratione molestiae nulla cumque vel suscipit magnam nobis
+      illo omnis nam eligendi dolorum sapiente numquam dignissimos tenetur explicabo ex ipsam amet iure mollitia
+      necessitatibus! Ea!
+
+      Eveniet error blanditiis perferendis deserunt. Dolores delectus nesciunt est perspiciatis, neque ut quis.
+      Laboriosam ducimus placeat facere optio soluta autem, .
+    </aside>
+  </main>
+  <footer>Footer</footer>
+</body>
+
+</html>

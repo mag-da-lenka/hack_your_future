@@ -1,0 +1,47 @@
+ul {
+  list-style: none; 
+  display: flex;
+  max-width: 600px;
+  padding: 0;
+  background-color: #444; 
+  f-lex-direction: column; 
+  margin: 0 auto;
+}
+
+li {
+  padding: 10px; 
+  border-right: 1px solid #000;
+  font-family: 'Oswald', sans-serif; 
+  color: ghostwhite; 
+}
+
+li:last-child {
+  margin-left : auto; 
+  b-order-right: none; 
+} 
+
+@media (max-width 414px) {
+  ul {
+    f-lex-direction: column; 
+  }
+  li:last-child {
+    margin: 0;
+  } 
+
+}
+
+/*
+CHECK THE MEDI QUERIES WITH LUCHA and KRITHI
+---- use flexbox
+---- add a media query to align vertically on a smaller screen
+---- horizontal nav should have a max width of 800px
+DONE to move the last li to the right, set the margin-left : auto
+DONE remember to add the subtle borders between the items
+DONE ul background : background: #444;
+DONE li font-family: 'Oswald', sans-serif;
+DONE li color: ghostwhite; 
+
+  align-items: center;
+  justify-content: space-around;
+
+*/

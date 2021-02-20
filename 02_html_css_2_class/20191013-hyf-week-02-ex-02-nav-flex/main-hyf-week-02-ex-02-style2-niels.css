@@ -1,0 +1,49 @@
+body,
+html {
+    margin: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box
+}
+
+nav {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background: #444;
+}
+
+nav ul li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 14px;
+    color: ghostwhite;
+    border-right: 2px solid #000;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+@media (max-width: 420px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        border: none;
+        border-top: 2px solid #000;
+    }
+
+    nav ul li:last-child {
+        border-bottom: 2px solid #000;
+        margin-left: 0;
+    }
+}

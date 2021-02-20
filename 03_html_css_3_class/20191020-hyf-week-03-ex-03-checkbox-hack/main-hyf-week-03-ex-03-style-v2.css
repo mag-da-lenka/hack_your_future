@@ -1,0 +1,41 @@
+input[type=text], select {
+    width: 97%;
+    padding: 1% 0% 1% 0%; 
+    margin: 1% 0% 1% 0%; 
+    border: 1px solid #ccc; 
+    border-radius: 7px;
+} 
+
+input[type=submit] {
+    width: 97%;
+    padding: 1% 0% 1% 0%; 
+    margin: 1% 0% 1% 0%; 
+    border: 1px solid orange; 
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    /* For mobile, it's typically better to position checkbox on top of clickable
+       area and turn opacity to 0 instead. */
+ }
+ 
+ /* Default State */
+ div {
+    background: green;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+ }
+ 
+ /* Toggled State */
+ input[type=checkbox]:checked ~ div {
+    background: red;
+ }

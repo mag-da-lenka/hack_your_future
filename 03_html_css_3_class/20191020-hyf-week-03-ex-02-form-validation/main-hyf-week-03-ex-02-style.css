@@ -1,0 +1,40 @@
+body {
+    display: block;
+    padding: 0% 0% 0% 0%; 
+    margin: 0% 0% 0% 0%; 
+    border: 5px solid mediumaquamarine;
+    border-radius: 10px;
+    background-color:white; 
+}
+
+form {
+    margin: 1% 0% 3% 0%;  
+}
+  
+input[type=text], 
+select {
+    width: 90%;
+    padding: 1% 1% 1% 1%; 
+    margin: 0% 0% 0% 0%; 
+    border: 1px solid pink; 
+    border-radius: 10px;
+}
+  
+
+  
+input[type=submit] {
+    width: 20%;
+    padding: 1% 1% 1% 1%; 
+    margin: 0% 0% 0% 0%;  
+    border: 3px solid orange;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+  
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+  /*top-right-bottom-left*/
+  /*#4CAF50*/

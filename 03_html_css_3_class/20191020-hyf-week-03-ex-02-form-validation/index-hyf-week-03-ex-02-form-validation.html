@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel=stylesheet href=main-hyf-week-03-ex-02-style.css>
+</head>
+
+<body>
+
+
+  <!---     
+main-hyf-week-03-ex-02-style
+Exercise 2    Create a basic HTML5 form and add some appropriate styling:
+Read about HTML forms here: https://www.w3schools.com/html/html_forms.asp
+Add this basic form to your index.html: [added - see below]
+1: explain what the action property does and what happens when you press the submit button 
+A: action :	Specifies an address (url) where to submit the form (default: the submitting page) 
+   so it shows what is going to happen = info will be sent after we press the SUBMIT button 
+2: replace the input text values with a placeholder text instead 
+A: see the markup  Mickey BECOMES type your first name etc 
+3: add label elements that point to the input text elements. What does the label element do? 
+A: Done. See below.  
+4: add required the required attribute. Add the * to the labels of the required fields 
+A: Done. See below. 
+5: remove the br tags and add appropriate css instead 
+A: ..................................................................  ---->
+
+  this is the "BEFORE" = OLDSCHOOL form as provided by Niels
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+
+  this is the "AFTER" = current standard
+  <!--   what we want to do - see the effect below - instructions as in the video from Niels
+  01. turn the value into a placeholder
+  02. write the text you want to have in your placeholder, here: "insert your first name /last name"
+  03. remove the ugly ----First name: <br>----- etc from the code and add a ----- <label for="firstname"></label> -----
+  04. add ---id="firstname"--- after the <input type="text" ---- 05. Add ---First name----- as a text inside the label tag   
+  06. Add <br> after the closing label tag because these are inline elements
+  07. add ---required--- at the end of the opening input tag
+  08! (then we'd like to validate the value to prevent eg. letting numbers in your name - correctness!)
+      (but that's advanced so let's skip it)
+  09. (...)
+  10! There's JS running in the forms so that's for later but there is some JS for us to help us with the homework.
+      CHECK IT OUT ................................................. senner008 on github !!!
+  11. REMEMBER that the validation in the form is just conveniece for the user. 
+      The REAL validation takes place ON THE SERVER! Why? Bc you _can_ manipulate the code on your browser, but not on the server!!!
+  12. Now add the CHECKBOX HACK so see the rest of the video
+      ..................................................... --->
+
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personal information:</legend>
+
+      <label for="firstname">First name</label> <br>
+      <input type="text" id="firstname" name="firstname" placeholder="insert first name" required><br>
+
+      <label for="lastname">Last name</label><br>
+      <input type="text" id="lastname" name="lastname" placeholder="insert last name" required><br><br>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+
+  <!-- THIS IS FROM w# SCHOOLS
+  <form action="/action_page.php">
+
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Name...">
+
+    <label for="email"></label>
+    <input type="text" id="email" name="email" placeholder="Email...">
+
+    <label for="message"></label>
+    <input type="text" id="message" name="message" placeholder="Write your message here...">
+
+    <input type="submit" value="Submit">
+
+  </form> -->
+
+
+
+
+</body>
+
+</html>

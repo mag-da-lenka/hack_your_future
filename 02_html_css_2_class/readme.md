@@ -2,8 +2,6 @@
 
 exercises:
 
-https://mag-da-lenka.github.io/mag_cv/design_code_interact/cv_index.html
-
 https://mag-da-lenka.github.io/hack_your_future/02_html_css_2_class/20191012-hyf-week-02-ex-flexbox-mozilla/1_flexbox0.html
 
 https://mag-da-lenka.github.io/hack_your_future/02_html_css_2_class/20191012-hyf-week-02-ex-flexbox-mozilla/2_flexbox_wrap0.html 

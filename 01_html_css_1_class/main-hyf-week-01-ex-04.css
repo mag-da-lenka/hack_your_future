@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body>header, nav, article, section, aside, footer {
+  padding: 10px;
+}
+
+header {
+  background-color: aliceblue;
+}
+
+nav {
+  background-color: rgb(193, 223, 250);
+}
+
+.article-section {
+  width: 70%;
+  float: left;
+  height: 400px;
+}
+
+article {
+  background-color: rgb(153, 198, 236);
+  height: 200px;
+}
+
+section {
+  background-color: rgb(78, 147, 207);
+  height: 200px;
+}
+
+aside {
+  background-color: rgb(81, 115, 144);
+  width: 30%;
+  float: right;
+  height: 400px;
+}
+
+footer {
+  background-color: aliceblue;
+  clear: both;
+}
+
+/* 
+NIELS: try to avoid setting height because 
+it is the content that should rule the height :>
+  body, html {
+    height: 100%; 
+  }
+*/

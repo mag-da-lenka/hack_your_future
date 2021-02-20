@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+html, head, body {
+  margin: 0% 1% 0% 1%;
+  height: 100%;
+}
+
+body>header, nav, article, section, aside, footer {
+  padding: 10px;
+}
+
+header {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: aliceblue;
+}
+
+article {
+  background-color: rgb(110, 164, 182);
+}
+
+section {
+  background-color: rgb(78, 141, 161);
+}
+
+.article-section {
+  /* width: 70%; */
+  /* float: left; */
+  flex: 2;
+}
+
+aside {
+  background-color: lightblue;
+  /* width: 30%; */
+  /* float: right; */
+  flex: 1;
+}
+
+/* this is article + section + aside */
+
+.content {
+  border: solid 3px black;
+  /* ATTENTION!!! */
+  flex-direction: row;
+  flex: 1;
+  margin-bottom: 2%;
+}
+
+footer {
+  background-color: aliceblue;
+  /* clear: both; */
+  display: fixed;
+  bottom: 0;
+  padding-bottom: 1%;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
+/* @media screen and (min-width: 601px) {} */
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}

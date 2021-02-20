@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>week 1 ex 2 step 6</title>
+
+  <!--- 
+Create an external main.css file and add a reference in the index.html. 
+Do not add ids or classes to the tags. Now add the following specific styles:
+1*select all elements. Add blue font color
+2*select all li elements. Add red font color
+3*select the second p element in the first div child. Add green color to the font. Hint: use the nth-child selector
+4*select the li element in the third div child. remove the dot
+5*select only the elements that have a class of 'cool-style'. Add some cool styling.
+6*Now add your own improved styles so the hierarchy becomes visible/obvious to the viewer.
+--->
+
+  <style>
+    /* 1*select all elements. Add blue font color */
+    body {
+      color: blue
+    }
+
+    /* 2*select all li elements. Add red font color */
+    li {
+      color: red;
+    }
+
+    /* 3*select the second p element in the first div child. 
+    Add green color to the font. Hint: use the nth-child selector */
+    #container div:first-child p:nth-child(2) {
+      color: green;
+    }
+
+    /* 4*select the li element in the third div child. remove the dot */
+    #container div:nth-child(3) ul {
+      list-style-type: none;
+    }
+
+    /* 5*select only the elements that have a class of 'cool-style'. 
+    Add some cool styling. */
+    p.cool-style {
+      background-color: pink;
+      font-size: 30px;
+    }
+
+
+    /* 6*Now add your own improved styles so the hierarchy becomes visible/obvious to the viewer.  */
+
+    body {
+      color: black;
+      font-size: 30px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    li {
+      color: rgb(185, 27, 111);
+      font-size: 20px;
+    }
+
+    #container div:first-child p:nth-child(2) {
+      color: rgb(123, 151, 179);
+    }
+
+    #container div:nth-child(3) ul {
+      list-style-type: none;
+    }
+
+    p.cool-style {
+      color: blue;
+      background-color: aliceblue;
+      font-size: 30px;
+    }
+
+    body div {
+      border: dotted 2px lightskyblue;
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    aside {
+      font-size: 15px;
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <aside>
+    Create an external main.css file and add a reference in the index.html. <br>
+    Do not add ids or classes to the tags. Now add the following specific styles: <br>
+    1*select all elements. Add blue font color <br>
+    2*select all li elements. Add red font color <br>
+    3*select the 2nd p element in the 1st div child. Make the font green. Hint: use the nth-child selector <br>
+    4*select the li element in the third div child. remove the dot <br>
+    5*select only the elements that have a class of 'cool-style'. Add some cool styling. <br>
+    6*Now add your own improved styles so the hierarchy becomes visible/obvious to the viewer. <br>
+  </aside>
+
+  <div id="container">
+
+    <div>
+      <p>
+        First p element in first div child
+      </p>
+      <p class="cool-style">
+        Second p element in first div child
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          First li element in second div child
+        </li>
+        <li class="cool-style hot-style">
+          Second li element in second div child
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          Li element in third div child
+        </li>
+      </ul>
+      <p class="cool-style">
+        P element in third div child
+      </p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

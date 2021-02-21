@@ -4,4 +4,4 @@
 
 preview: 
 
-https://mag-da-lenka.github.io/hack_your_future/08_js1_4_home_voice_assistant/index-JS1-4-hw-draft-after-study-group.html
+https://mag-da-lenka.github.io/hack_your_future//08_js1_4_home_voice_assistant/index-JS1-4-hw-draft-after-study-group.html

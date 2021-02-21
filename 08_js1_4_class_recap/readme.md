@@ -1,4 +1,4 @@
-## 07 class [JavaScript 1.4] preview:
+## 08 class [JavaScript 1.4] preview:
 
 : : fn + F12 === console : : 
 

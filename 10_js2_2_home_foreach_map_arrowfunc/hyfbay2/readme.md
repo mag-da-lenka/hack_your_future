@@ -1,0 +1,1 @@
+https://github.com/HackYourFuture-CPH/JavaScript/blob/master/javascript2/week2/homework.md#hyfbay---get-the-okayest-products-here---continued

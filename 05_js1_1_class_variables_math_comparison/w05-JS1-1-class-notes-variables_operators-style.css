@@ -1,14 +1,29 @@
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-  padding: 0% 10% 0% 5%;
-  /*top-right-bottom-left*/
+  display: block;
+  padding: 5vh 1vw 1vh 5vw;
+  background-image: linear-gradient(to bottom, rgb(59, 100, 95), rgb(51, 78, 75));
+  color: rgb(228, 228, 228);
+  font-family: 'Abel';
+  height: 100vh;
 }
 
-body, footer, header, nav, article, aside, section, figure, address {
-  display: block;
+h1, h2, h3, p, ul, li, a {
+  color: rgb(228, 229, 228);
+  border: none;
+  font-weight: 300;
+  line-height: 1em; 
+}
+
+h1 {
+  color: rgb(194, 165, 181);
+}
+
+li {
+  list-style-type: square;
 }

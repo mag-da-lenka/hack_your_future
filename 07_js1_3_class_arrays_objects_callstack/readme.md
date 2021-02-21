@@ -1,4 +1,4 @@
-## 04 class [JavaScript 1.3] preview:
+## 07 class [JavaScript 1.3] preview:
 
 exercises:
 

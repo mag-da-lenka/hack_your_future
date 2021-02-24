@@ -10,4 +10,4 @@ https://mag-da-lenka.github.io/hack_your_future/13_js3_2_class_promises/js3_2_pr
 
 class: 
 
-https://mag-da-lenka.github.io/hack_your_future/13_js3_2_class_promises/js3_2class2019/js32class.html
+https://mag-da-lenka.github.io/hack_your_future//13_js3_2_class_promises/js3_2class2019/js32class.html

@@ -11,7 +11,7 @@ body {
     color: rgb(228, 228, 228);
     font-family: 'Abel';
     max-width: 80vw;
-    height: 100%;
+    height: 100vh;
 }
 
 h1, h2, h3, h5, h6, p, ul, li, a, label {

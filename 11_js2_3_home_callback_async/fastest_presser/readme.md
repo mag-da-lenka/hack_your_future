@@ -2,7 +2,7 @@
 
 the fastest presser in the realm  ---> preview:  
 
-'https://mag-da-lenka.github.io/11_js2_3_home_callback_async/fastest_presser/fastest_presser.html'
+'https://mag-da-lenka.github.io/hack_your_future/11_js2_3_home_callback_async/fastest_presser/fastest_presser.html'
 
 Instructions: 
 

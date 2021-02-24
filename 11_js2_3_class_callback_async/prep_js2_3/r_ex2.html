@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ex2 js2-3</title>
+</head>
+
+<body>
+
+    <h1>js2-3 ex 2 (r)</h1>
+
+    <script type="text/javascript">
+
+        // 01_a make an array collecting mousePositions over 30 seconds
+        const mousePosition_s = []
+
+        // 01_b make a function that grabs the mouse position
+        const mouseHasMoved = (event) => {
+            const mousePosition = {
+                xKey: event.clientX,
+                yKey: event.clientY
+            }
+            // console.log(mousePosition)         // console spam 1
+            mousePosition_s.push(mousePosition)
+            // console.log(mousePosition_s)       // console spam 2
+        }
+
+        // 01_c listen for mouse moves on the documents
+        document
+            .addEventListener('mousemove', mouseHasMoved);
+
+
+
+        // 02_a make a func that calculates avg of numbers
+        const calculateAverageOfNumbers = numbers => {
+            let sumOfNumbers = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                sumOfNumbers += numbers[i]
+            }
+            return sumOfNumbers / numbers.length
+        }
+        console.log(calculateAverageOfNumbers([1, 2, 3, 4, 5, 6]))
+
+        // 02_b
+        const calculateAverages = () => {
+            const avgX_key = calculateAverageOfNumbers(mousePosition_s.map(pos => pos.xKey));
+            const avgY_key = calculateAverageOfNumbers(mousePosition_s.map(pos => pos.yKey));
+            console.log(
+                "Average of x/Key and y/Key:",
+                avgX_key.toFixed(2),
+                avgY_key.toFixed(2)
+            )
+        }
+
+        // 02_c setTimout -> calculate the average x and average y
+        setTimeout(calculateAverages, 5000)
+
+    </script>
+</body>
+
+</html>

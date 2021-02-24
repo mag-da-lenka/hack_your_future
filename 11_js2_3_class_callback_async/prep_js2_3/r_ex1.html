@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+    <button id="first-button">Button 1</button>
+    <button id="second-button">Button 2</button>
+    <button id="delay-button">Button 3 (3s delay)</button>
+
+    <script type="text/javascript">
+
+        // buttons grabbed from html
+        const firstButton = document.getElementById("first-button");
+        const secondButton = document.getElementById("second-button");
+        const delayButton = document.getElementById("delay-button");
+
+        // Button 1 and 2 - life goals
+        let count = 0;
+        const countUp = () => {
+            count++;
+            console.log("count: ", count)
+        }
+        firstButton.addEventListener('click', countUp);
+        secondButton.addEventListener('click', countUp);
+
+        // Button 3 - delayed life goals
+        const delayButtonClicked = () => {
+            console.log("Wait for 3 seconds ...")
+            setTimeout(() => console.log("This text was delayed by 3 seconds"), 3000);
+        }
+        delayButton.addEventListener('click', delayButtonClicked);
+
+        // DOM FULLY LOADED
+        const DOMFullyLoaded = () => {
+            console.log("DOM fully loaded and parsed");
+        }
+        window.addEventListener('load', DOMFullyLoaded)
+
+    </script>
+
+</body>
+
+</html>

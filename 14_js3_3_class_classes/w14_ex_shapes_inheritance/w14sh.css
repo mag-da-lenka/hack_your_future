@@ -1,0 +1,35 @@
+body, html {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0% 10% 10% 10%;
+  /* ... and on the first day of snow this winter (2021/01/06): */
+  background-color: snow;
+}
+
+p {
+  margin: 1% 0% 1% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+ul {
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  border: solid 0.5px orange;
+  border-radius: 10px;
+}
+
+/* .edu_entry_ul_in_ul, .job_entry_ul_in_ul {
+  margin: 1% 0.5% 1% 0.5%;
+  border: solid 1px skyblue;
+  border-radius: 10px;
+} */
+
+li {
+  margin: 1% 1% 1% 1%;
+  padding: 1% 2% 1% 2%;
+  list-style-type: none;
+  border: dotted 1px orange;
+  border-radius: 10px;
+}

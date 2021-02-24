@@ -1,4 +1,4 @@
-## 13 class [JavaScript 3.3] preview:
+## 14 class [JavaScript 3.3] preview:
 
 : : fn + F12 === console : : 
 

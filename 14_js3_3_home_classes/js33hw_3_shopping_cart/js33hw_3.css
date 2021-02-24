@@ -1,0 +1,23 @@
+body {
+    font-family: 'Share Tech';
+}
+
+main {
+    border: solid rgb(192, 192, 192) 2px; 
+    border-radius: 15px;
+    padding: 3% 5% 3% 5%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.product_name, h1 {
+    font-size: 110%;
+}
+
+.total_price {
+    font-size: 130%;
+}
+
+li {
+    list-style: none;
+}

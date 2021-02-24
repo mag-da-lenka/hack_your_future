@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Turret Road' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Della Respira' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lacquer' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Zilla Slab Highlight' rel='stylesheet'>
+
+
+  <meta name="description" content="hack_your_future curriculum">
+  <meta name="keywords" content="front-end">
+  <meta name="author" content="squirrel mag">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+  <title>10 JavaScript 3.1 homework /weather app</title>
+
+  <link rel="stylesheet" href="weather_app.css">
+
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Weather App</h1>
+
+
+    <!-- Today is >> current date -->
+    <p id="today_is_sayer"></p>
+
+
+    <!-- coordinates -->
+    <div id="coordinates_grabber_div">
+      <button id="coordinates_grabber">
+        <img src="location.svg" alt="get location svg">
+      </button>
+    </div>
+
+    <!-- city -->
+    <div id="city_input_and_button">
+      <div>
+        <input id="city_input" type="text" placeholder=" . . . type your city">
+        </input>
+        <p id="blank_input_check"></p>
+      </div>
+      <div>
+        <button id="city_grabber">
+          <img src="cityscape.svg" alt="get city svg">
+        </button>
+      </div>
+    </div>
+
+
+    <div id="rendered_data_div">
+
+      <!-- blinky blinky - loading -->
+      <li id="blinky_blinky_loading"></li>
+
+      <!-- data blanks -->
+      <li id="city"></li>
+      <img id="icon"></img>
+      <li id="temp"></li>
+      <li id="pressure"></li>
+      <li id="wind"></li>
+      <li id="clouds"></li>
+      <li id="humidity"></li>
+      <li id="sun_r"></li>
+      <li id="sun_s"></li>
+      <!-- maaaaybe later -->
+      <li id="map"></li>
+      <!-- <iframe class="map-style"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.3845460594077!2d12.599057682284855!3d55.69300217870841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c90eb8d422103%3A0xdfa8900ca2351e3c!2sThe%20Little%20Mermaid!5e0!3m2!1sen!2sdk!4v1571337974210!5m2!1sen!2sdk"
+    allowfullscreen=""></iframe> -->
+    </div>
+
+
+  </main>
+
+
+  <!-- 
+  <footer>
+    <h2>Credits:</h2>
+    <a href="https://image.shutterstock.com/image-vector/modern-building-background-260nw-252630751.jpg">
+      satellite picture: source
+    </a>
+    <a href="https://freeicons.io/profile/3">
+      location icon: source
+    </a>
+    <a href="https://www.svgrepo.com/svg/187288/cityscape-town">
+      cityscape icon: source
+    </a>
+  </footer> -->
+
+  <script type="text/javascript" src="weather_app.js"></script>
+
+</body>
+
+</html>

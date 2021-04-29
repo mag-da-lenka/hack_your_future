@@ -35,6 +35,5 @@ week 01-17 and 27
 17 https://github.com/HackYourFuture-CPH/databases/tree/master/lesson3 security and non-relational databases  
 &nbsp; &nbsp; &nbsp;https://github.com/HackYourFuture-CPH/databases/tree/master/MongoDB  
 
-
    ### GIT 2  
 27 https://github.com/HackYourFuture-CPH/Git/tree/master/week2 git 2  

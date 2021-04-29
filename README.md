@@ -1,9 +1,9 @@
-# hack_your_future
+# hack_your_future__html_css_js_db_git
+
 Hack Your Future /Copenhagen : : coding school : : class and homework
+week 01-17 and 27
 
-## all HackYourFuture stuff rewritten  
-
-### 28 weeks // https://github.com/HackYourFuture-CPH/curriculum  
+### https://github.com/HackYourFuture-CPH/curriculum 
 
 
    ### HTML CSS  
@@ -35,21 +35,6 @@ Hack Your Future /Copenhagen : : coding school : : class and homework
 17 https://github.com/HackYourFuture-CPH/databases/tree/master/lesson3 security and non-relational databases  
 &nbsp; &nbsp; &nbsp;https://github.com/HackYourFuture-CPH/databases/tree/master/MongoDB  
 
-   ### NODE.js  
-18 https://github.com/HackYourFuture-CPH/node.js/tree/master/week1 HTTP | Intro to node.js | simple webserver  
-19 https://github.com/HackYourFuture-CPH/node.js/tree/master/week2 express  
-20 https://github.com/HackYourFuture-CPH/node.js/tree/master/week3 database connection | api  
-21 https://github.com/HackYourFuture-CPH/node.js/tree/master/week4  
-&nbsp; &nbsp; &nbsp;fullstack application | connecting frontend to backend  
-22 https://github.com/HackYourFuture-CPH/node.js/tree/master/week5 finishing last weeks' homework  
-
-   ### REACT  
-23 https://github.com/HackYourFuture-CPH/React/tree/master/week1 thinking the react way  
-24 https://github.com/HackYourFuture-CPH/React/tree/master/week2 building components  
-25 https://github.com/HackYourFuture-CPH/React/tree/master/week3  
-&nbsp; &nbsp; &nbsp;forms and events | data fetching | children | prop types  
-26 https://github.com/HackYourFuture-CPH/React/tree/master/week4 managing state  
-27 https://github.com/HackYourFuture-CPH/React/tree/master/week5 connecting to node  
 
    ### GIT 2  
-28 https://github.com/HackYourFuture-CPH/Git/tree/master/week2 git 2  
+27 https://github.com/HackYourFuture-CPH/Git/tree/master/week2 git 2  
